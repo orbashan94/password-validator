@@ -1,7 +1,14 @@
 #!/bin/bash
 
-#User input password
-PASSWORD=$1
+if [ $1 == "-f" ]
+then
+#READ PASSWORD FROM FILE
+    FILE_PATH=$2
+    PASSWORD=$(<$FILE_PATH)
+else
+#READ PASSWORD FROM USER INPUT
+    PASSWORD=$1
+fi
 
 #Colors for output
 GREEN=$(tput setaf 2)
