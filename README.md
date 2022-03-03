@@ -1,5 +1,5 @@
 # Password validator script
-A script that checks whether a password is valid according to the following rules:
+A Bash script that checks whether a password is valid according to the following rules:
 - Length – minimum of 10 characters.
 - Contain both alphabet and number.
 - Include both the small and capital case letters.
